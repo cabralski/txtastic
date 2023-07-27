@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<!-- TODO: Add more <meta> tags that increases SEO..! -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- TODO: Add <meta> tags for `robots.txt` and more. -->
+	<!-- ... -->
+
+	<!-- txtastic - A simple pastebin made using Rocket + HTMX. -->
+	<title>txtastic</title>
+
+	<!-- TailwindCDN --> <!-- WARNING: Do not use TailwindCDN in production! -->
+	<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+
+	<header class="bg-black py-4">
+		<div class="container ml-auto mr-auto max-w-4xl text-white">
+			<h1 class="text-4xl"><i>txtastic</i></h1>
+		</div>
+	</header>
+
+	<div class="container ml-auto mr-auto max-w-4xl mt-10">
+		<div class="bg-white rounded shadow p-5">
+			<label class="font-bold text-xl">{{ id }}</label>
+			<textarea disabled class="mt-1 w-full px-3 py-2 text-gray-700 border rounded focus:outline-none"
+				style="min-height: 400px;" placeholder="...">{{ txt }}</textarea>
+		</div>
+	</div>
+
+</body>
+
+</html>
